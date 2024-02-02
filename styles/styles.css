@@ -1,5 +1,3 @@
-/* BODY */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
@@ -84,24 +82,95 @@ h2 {
   grid-template-columns: 40% 40%;
   gap: 5%;
   padding: 2rem 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.contact {
-  height: 85vh;
+@media (max-width: 480px) {
+  .skill-grid {
+    width: 80%;
+    gap: none;
+    padding: none;
+    height: 70vh;
+  }
+  .grid-img {
+    grid-column: span 2;
+  }
+
+  .grid-sk {
+    grid-column: span 2;
+  }
+
+  .s-logo {
+    width: 50px;
+  }
+
+  .contact {
+    height: 50vh;
+  }
+
+  ol > li {
+    text-align: center;
+  }
 }
 
-.contact-info{
-  height: 50vh;
+.s-logo {
+  width: 75px;
 }
-.contact-info > ul {
-  display: flex;
-  flex-direction: column;
-  gap: 10vh;
-  list-style: none;
+
+form {
+  width: 80%;
+}
+
+
+.nameandemail {
+  border-radius: 20px 20px 0 0;
+  border-bottom: 0;
+}
+.tellmewhy {
+  border-top: none;
+  border-radius: 0 0 20px 20px;
+}
+
+
+input[type="text"], input[type="email"], select {
+width:60%;
+height: 2rem;
+text-align: center;
+}
+
+textarea {
+width:80%;
+}
+
+input[type="text"], input[type="email"], select,textarea {
+display: block;
+margin: 1rem auto;
+color: rgb(26, 26, 29);
+background-color: rgb(220, 220, 220);
+border: 2px solid;
+border-radius: 10px;
+border-color: rgb(213, 45, 45);
+}
+
+input[type="submit"]{
+  width: 35%;
+  height: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(213, 45, 45);
+}
+input[type="submit"]:hover {
+  background-image: linear-gradient(45deg, rgb(213, 45, 45), rgb(213, 87, 87));
+}
+input[type="submit"]:active {
+  background-image: linear-gradient(45deg, rgb(213, 45, 45), rgb(213, 15, 15));
 }
 
 footer {
-  background-color: rgb(40, 40, 40);
+background-color: rgb(40, 40, 40);
 }
 
 .footer {

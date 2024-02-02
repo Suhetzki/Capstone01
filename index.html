@@ -34,28 +34,34 @@
       <p>Thirty's knocking, not with a toolbox, but with a keyboard. The sun, rain, and wind that defined my workdays can stay outside. Inside, a new horizon beckons: <span class="bold">web development</span>.</p>
     </div>
 
+    <div class="story container">
+      <h2>My Studying Story</h2>
+      <p> I traded career confusion for code obsession in a YouTube-fueled blink. FreeCodeCamp became my coding playground, but my skills hit a wall. So, I bricked my way through Udemy's bootcamp, only to get sidetracked by life's plot twist.</p>
+      <p>Three months later, the code bug bit again. Back to Udemy, smarter, not faster (Who rewatches 15 hours of lectures anyway?). Brushed up on the basics, then dove into John Bryce's native language course. Now, I'm a code-gobbling Pac-Man, mastering the Full-Stack Dev path.</p>
+      <p>My life? Eat, sleep, code, repeat (with a 200% effort on lectures and homework, squeezed in after work and dog walks!) But hey, the dedication is worth it. Next stop?</p>
+      <h3>JavaScript</h3>
+      <p>So next time you see my Code, be warned! it might be <span>alive</span></p>
+    </div>
+
     <div class="strong container" id="strong">
       <h2>Skills</h2>
       <div class="skill-grid">
-        <div><p class="bold">Adaptability</p></div>
-        <div>
+        <div class="grid-img"><img class="s-logo" src="images/html.png"></div>
+        <div class="grid-sk">
+          <p>HTML</p>
           <ol>
-            <li></li>
-            <li></li>
+            <li>Structure and Semantics</li>
+            <li>Forms and Inputs</li>
+            <li>Tables and Lists</li>
           </ol>
         </div>
-        <div><p class="bold">Willingness To Learn</p></div>
-        <div>
+        <div class="grid-img"><img class="s-logo" src="images/css.png"></div>
+        <div class="grid-sk">
+          <p>CSS</p>
           <ol>
-            <li></li>
-            <li></li>
-          </ol>
-        </div>
-        <div><p class="bold">Leadership and Teamwork</p></div>
-        <div>
-          <ol>
-            <li></li>
-            <li></li>
+            <li>Styling and Formatting</li>
+            <li>Responsive Design</li>
+            <li>Layout and Positioning</li>
           </ol>
         </div>
       </div>
@@ -63,15 +69,27 @@
 
     <div class="Contact container" id="contact">
       <h2>Contact me</h2>
-      <div class="contact-info">
-        <ul>
-          <li><a class="contact-link bold" href="http://www.linkedin.com/in/dima-suhetzki-743ab4170" target="_blank">LinkedIn</a></li>
-          <li><a class="contact-link bold">Instagram</a></li>
-          <li><a class="contact-link bold">facebook</a></li>
-          <li><a class="contact-link bold">Gmail</a></li>
-        </ul>
-      </div>
+      <form method="post">
+        <fieldset class="contactme nameandemail">
+          <label for="name">Name: <input id="name" name="name" type="text" required /></label>
+          <label for="email">Email: <input id="email" type="email" required placeholder="abc@abc.abc"></label>
+        </fieldset>
+        <fieldset class="contactme tellmewhy">
+          <label for="selection">What do you think I should practice more? <select id="selection" type="select">
+            <option value="">(select one)</option>
+            <option value="1">HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">JS</option>
+            <option value="4">Other</option>
+          </select></label>
+          <label for="tellme">Anything else?
+            <textarea id="tellme" name="tellme" rows="3" cols="30" placeholder="Tell me your thoughts!"></textarea>
+          </label>
+          <input type="submit">
+        </fieldset>
+      </form>
     </div>
+
 
     <footer>
       <div class="footer">
